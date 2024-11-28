@@ -45,14 +45,17 @@ body {
 nav {
     width: 100%;                      /* Largura total */
     max-width: 100%;                /* Limite máximo */
-    background-color: black;           /* Cor de fundo */
+    background-color: rgba(0, 0, 0, 0.7);          /* Cor de fundo */
+   
     padding: 30px 20px;               /* Espaçamento interno */
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
     border-radius: 5px;               /* Bordas arredondadas */
     display: flex;                    /* Alinha os itens horizontalmente */
     justify-content: flex-end;   /* Espaça itens nos extremos */
     align-items: center;  
-    gap: 20px;            /* Alinha verticalmente ao centro */
+    border: 1px solid green;
+    
+    
    
 
     
@@ -63,8 +66,11 @@ nav {
   nav ul {
     list-style: none;                 /* Remove marcadores */
     display: flex;                    /* Alinha itens horizontalmente */
-    gap: 10px;                        /* Espaçamento entre os itens */
+    gap: 30px;                        /* Espaçamento entre os itens */
+    align-items: center;
     margin-right: 100px;
+   
+    border: 1px solid purple;
   
   }
   
@@ -72,11 +78,13 @@ nav {
   nav ul li a {
     text-decoration: none;            /* Remove sublinhado */
     color: whitesmoke;                      /* Cor do texto */
-                     
-    padding: 5px 10px;                /* Espaçamento interno */
-    border-radius: 3px;               /* Bordas arredondadas */
+                   
+    padding: 5px 10px;               /* Espaçamento interno */
+   
     transition: all 0.3s;             /* Suaviza o efeito hover */
     font-size: 18px;
+    border: 1px solid blue;
+    
   }
   
   nav ul li a:hover {
@@ -90,6 +98,11 @@ nav {
     height: 50px;                     /* Altura da imagem */
     cursor: pointer;                  /* Troca o cursor ao passar o mouse */
     transition: transform 0.3s;       /* Efeito ao passar o mouse */
+    margin-left: 40px;
+    border: 1px solid yellowgreen;
+   
+   
+    
     
    
    
@@ -100,3 +113,14 @@ nav {
     transform: scale(1.1);           /* Aumenta levemente ao passar o mouse */
     
   }
+  
+  .logo {
+    font-size: 36px;                  /* Tamanho do texto do logo */
+    font-weight: 900;                /* Texto em negrito */
+    color: white;                     /* Cor branca */
+    justify-content: flex-end;
+    margin-right: 150px;
+
+    border: 1px solid orange;
+
+}
