@@ -1,111 +1,162 @@
 body {
-  font-family: 'Inter', sans-serif;
-  /* Fonte importada do Google Fonts */
-  margin: 0;
-  /* Remove margens padrão */
-  padding: 0;
-  /* Remove preenchimentos padrão */
-  background-color: #f9f9f9;
-  /* Define uma cor de fundo suave */
-  color: #333;
-  /* Define a cor padrão do texto */
-  display: flex;
-  /* Flexbox para alinhamento */
-  flex-direction: column;
-  /* Elementos empilhados verticalmente */
-  align-items: center;
-  /* Centraliza o conteúdo horizontalmente */
-  min-height: 100vh;
-  /* Garante que o body ocupe a altura total da tela */
-  box-sizing: border-box;
-
+  font-family: 'Inter', sans-serif; /* Fonte */
+  margin: 0; /* Remove margens */
+  padding: 0; /* Remove preenchimentos */
+  background-color: black; /* Cor de fundo */
+  color: #333; /* Cor do texto */
+  display: flex; /* Flexbox */
+  flex-direction: column; /* Empilhamento vertical */
+  align-items: center; /* Centraliza o conteúdo */
+  min-height: 100vh; /* Altura mínima */
+  box-sizing: border-box; /* Box model */
+  width: 100%; /* Garante que o body tenha 100% da largura */
 }
 
-.image1 {
-  position: fixed;         /* Fixa a imagem no fundo da tela */
-  top: 0;                  /* Alinha no topo da tela */
-  left: 0;                 /* Alinha à esquerda da tela */
-  width: 100vw;            /* Ocupa 100% da largura da janela */
-  height: 100vh;           /* Ocupa 100% da altura da janela */
-  overflow: hidden;        /* Esconde qualquer conteúdo excedente */
-  z-index: -1;             /* Coloca a imagem atrás dos outros elementos */
-}
 
-/* Estilo da imagem */
-.image1 img {
-  width: 100%;             /* Largura total do contêiner */
-  height: 100%;            /* Altura total do contêiner */
-  object-fit: cover;       /* Redimensiona a imagem para cobrir todo o contêiner */
-}
 
 nav {
-  display: flex;               /* Alinha os elementos horizontalmente */
-  width: 100%;                 /* Ocupa 100% da largura */
-  max-width: 100%;             /* Impede que ultrapasse a largura máxima */
-  background-color: rgba(0, 0, 0, 0.7); /* Fundo preto com transparência */
-  padding: 30px 20px;          /* Espaçamento interno */
-  border-radius: 5px;          /* Bordas arredondadas */
-  justify-content: flex-end;   /* Alinha os itens ao lado direito */
-  align-items: center;         /* Centraliza verticalmente */
-  border: 1px solid green;     /* Adiciona uma borda verde (para debug) */
+  display: flex; /* Flexbox */
+  width: 100%; /* Largura 100% */
+  height: 10%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo transparente */
+  padding: 20px 30px; /* Espaçamento */
+  justify-content: center; /* Distribui o conteúdo */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  position: fixed; /* Fixa o nav no topo */
+  gap: 150px;
+  top: 0; /* Fixa no topo */
+ 
+ 
+ 
+/* border: 2px solid blue;*/
 }
 
 nav ul {
-  display: flex;               /* Alinha os itens horizontalmente */
-  list-style: none;            /* Remove os marcadores da lista */
-  gap: 30px;                   /* Espaçamento entre os itens */
-  align-items: center;         /* Centraliza verticalmente */
-  margin-right: 100px;         /* Adiciona espaço à direita do menu */
-  border: 1px solid purple;    /* Adiciona uma borda roxa (para debug) */
+  display: flex; /* Flexbox para os links */
+  list-style: none; /* Remove marcadores */
+  gap: 50px; /* Espaçamento entre os links */
+  margin: 0; /* Remove margens */
+  
+ /* border: 1px solid red;*/
 }
 
 nav ul li a {
-  text-decoration: none;       /* Remove o sublinhado dos links */
-  color: whitesmoke;           /* Define a cor do texto como branco esfumaçado */
-  display: flex;               /* Flexbox para ajustar o conteúdo */
-  padding: 5px 10px;           /* Espaçamento interno nos links */
-  transition: all 0.3s;        /* Suaviza mudanças ao passar o mouse */
-  font-size: 18px;             /* Define o tamanho da fonte */
-  border: 1px solid blue;      /* Adiciona uma borda azul (para debug) */
+  text-decoration: none; /* Remove sublinhado */
+  color: white; /* Cor do texto */
+  padding: 10px; /* Espaçamento interno */
+  font-size: 18px; /* Tamanho da fonte */
+  transition: background-color 0.3s; /* Transição suave */
+  
+ /* border: 1px solid green;*/
 }
 
 nav ul li a:hover {
-  background-color: #ddd;      /* Altera a cor de fundo ao passar o mouse */
-  color: #000;                 /* Altera a cor do texto para preto ao passar o mouse */
+  background-color: #ddd; /* Cor de fundo ao passar o mouse */
+  color: black; /* Cor do texto */
 }
+
+
 
 .cart-icon {
-  width: 50px;                 /* Largura do ícone do carrinho */
-  height: 50px;                /* Altura do ícone do carrinho */
-  cursor: pointer;             /* Troca o cursor para um ponteiro ao passar o mouse */
-  transition: transform 0.3s;  /* Anima o redimensionamento suavemente */
-  margin-left: 40px;           /* Adiciona espaço à esquerda do ícone */
-  border: 1px solid yellowgreen; /* Adiciona uma borda amarelo-esverdeada (para debug) */
+  width: 40px; /* Tamanho do ícone */
+  height: 40px; /* Tamanho do ícone */
+  cursor: pointer; /* Cursor de ponteiro */
+  transition: transform 0.3s; /* Animação de transformação */
+
+
+ /* border: 1px solid plum; */
 }
+  
+ 
 
 .cart-icon:hover {
-  transform: scale(1.1);       /* Aumenta levemente o tamanho ao passar o mouse */
+  transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
 }
 
+
+
 .logo {
-  display: flex;               /* Exibe o texto e a imagem lado a lado */
-  align-items: center;         /* Centraliza verticalmente os itens */
-  gap: 10px;                   /* Espaçamento entre a imagem e o texto */
-  margin-right: 200px;         /* Adiciona espaço à direita da logo */
-  border: 1px solid orangered; /* Adiciona uma borda laranja (para debug) */
+  display: flex; /* Flexbox para a logo */
+  align-items: center; /* Alinha verticalmente */
+  gap: 10px; /* Espaçamento entre a imagem e o texto */
+  
+  
+  /*border: 1px solid green;*/
 }
 
 .logo img {
-  width: 100px;                /* Largura da imagem da logo */
-  height: 100px;               /* Altura da imagem da logo */
+  width: 50px; /* Largura da logo */
+  height: 50px; /* Altura da logo */
+  
+  /*border: 1px solid bisque;*/
 }
 
 .logo span {
-  font-size: 36px;             /* Tamanho do texto da logo */
-  font-weight: 900;            /* Espessura do texto (negrito máximo) */
-  color: white;                /* Cor branca para o texto */
-  font-family: 'Inter', sans-serif; /* Define a fonte do texto */
+ 
+  font-size: 37px;
+  font-weight: 400;
+  color: grey; /* Cor do texto */
+  font-weight: 900; /* Negrito */
+  margin-right: 5px;
 }
+
+
+.image1 {
+  position: fixed; /* Fixa a imagem de fundo */
+  top: 0; /* Alinha ao topo */
+  left: 0; /* Alinha à esquerda */
+  width: 100%; /* Largura 100% */
+  height: 80%; /* Altura 100% */
+  overflow: hidden; /* Esconde overflow */
+  z-index: -1; /* Coloca atrás do conteúdo */
+
+  
+
+}
+
+.image1 img {
+  width: 100%; /* Largura da imagem */
+  height: 100%; /* Altura da imagem */
+  object-fit: cover; /* Cobre todo o contêiner */
+
+/*  border: 1px solid goldenrod; */
+}
+
+
+
+.centralizado {
+ position: absolute; /* Posiciona a frase no fundo */
+  top: 50%; /* Centraliza verticalmente */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta o centro exato */
+  text-align: center; /* Alinha o texto ao centro */
+  color: white; /* Cor do texto */
+  font-size: 76px;
+  font-weight: 500;
+ 
+ /* border: 1px solid purple; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
