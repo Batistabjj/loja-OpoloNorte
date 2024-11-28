@@ -22,119 +22,90 @@ body {
 }
 
 .image1 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  z-index: -1;
+  position: fixed;         /* Fixa a imagem no fundo da tela */
+  top: 0;                  /* Alinha no topo da tela */
+  left: 0;                 /* Alinha à esquerda da tela */
+  width: 100vw;            /* Ocupa 100% da largura da janela */
+  height: 100vh;           /* Ocupa 100% da altura da janela */
+  overflow: hidden;        /* Esconde qualquer conteúdo excedente */
+  z-index: -1;             /* Coloca a imagem atrás dos outros elementos */
 }
 
 /* Estilo da imagem */
 .image1 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-
+  width: 100%;             /* Largura total do contêiner */
+  height: 100%;            /* Altura total do contêiner */
+  object-fit: cover;       /* Redimensiona a imagem para cobrir todo o contêiner */
 }
-
-
-
 
 nav {
-  display: flex;
-  width: 100%;
-  max-width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-
-  padding: 30px 20px;
-  border-radius: 5px;
-  justify-content: flex-end;
-  align-items: center;
-  border: 1px solid green;
-
-
-
-
-
-
+  display: flex;               /* Alinha os elementos horizontalmente */
+  width: 100%;                 /* Ocupa 100% da largura */
+  max-width: 100%;             /* Impede que ultrapasse a largura máxima */
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo preto com transparência */
+  padding: 30px 20px;          /* Espaçamento interno */
+  border-radius: 5px;          /* Bordas arredondadas */
+  justify-content: flex-end;   /* Alinha os itens ao lado direito */
+  align-items: center;         /* Centraliza verticalmente */
+  border: 1px solid green;     /* Adiciona uma borda verde (para debug) */
 }
 
-/* Estilo para a lista */
 nav ul {
-  display: flex;
-  list-style: none;
-  gap: 30px;
-  align-items: center;
-  margin-right: 100px;
-
-  border: 1px solid purple;
-
+  display: flex;               /* Alinha os itens horizontalmente */
+  list-style: none;            /* Remove os marcadores da lista */
+  gap: 30px;                   /* Espaçamento entre os itens */
+  align-items: center;         /* Centraliza verticalmente */
+  margin-right: 100px;         /* Adiciona espaço à direita do menu */
+  border: 1px solid purple;    /* Adiciona uma borda roxa (para debug) */
 }
 
-
-
-/* Links */
 nav ul li a {
-  text-decoration: none;
-  color: whitesmoke;
-  display: flex;
-  padding: 5px 10px;
-  transition: all 0.3s;
-  font-size: 18px;
-  border: 1px solid blue;
-
+  text-decoration: none;       /* Remove o sublinhado dos links */
+  color: whitesmoke;           /* Define a cor do texto como branco esfumaçado */
+  display: flex;               /* Flexbox para ajustar o conteúdo */
+  padding: 5px 10px;           /* Espaçamento interno nos links */
+  transition: all 0.3s;        /* Suaviza mudanças ao passar o mouse */
+  font-size: 18px;             /* Define o tamanho da fonte */
+  border: 1px solid blue;      /* Adiciona uma borda azul (para debug) */
 }
-
-
 
 nav ul li a:hover {
-  background-color: #ddd;
-  color: #000;
+  background-color: #ddd;      /* Altera a cor de fundo ao passar o mouse */
+  color: #000;                 /* Altera a cor do texto para preto ao passar o mouse */
 }
 
-
-
-
-/* Estilo para o ícone do carrinho */
 .cart-icon {
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  transition: transform 0.3s;
-  margin-left: 40px;
-  border: 1px solid yellowgreen;
-
+  width: 50px;                 /* Largura do ícone do carrinho */
+  height: 50px;                /* Altura do ícone do carrinho */
+  cursor: pointer;             /* Troca o cursor para um ponteiro ao passar o mouse */
+  transition: transform 0.3s;  /* Anima o redimensionamento suavemente */
+  margin-left: 40px;           /* Adiciona espaço à esquerda do ícone */
+  border: 1px solid yellowgreen; /* Adiciona uma borda amarelo-esverdeada (para debug) */
 }
-
 
 .cart-icon:hover {
-  transform: scale(1.1);
-
+  transform: scale(1.1);       /* Aumenta levemente o tamanho ao passar o mouse */
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-right: 200px;
-  border: 1px solid orangered;
+  display: flex;               /* Exibe o texto e a imagem lado a lado */
+  align-items: center;         /* Centraliza verticalmente os itens */
+  gap: 10px;                   /* Espaçamento entre a imagem e o texto */
+  margin-right: 200px;         /* Adiciona espaço à direita da logo */
+  border: 1px solid orangered; /* Adiciona uma borda laranja (para debug) */
 }
 
 .logo img {
-  width: 100px;
-  height: 100px;
+  width: 100px;                /* Largura da imagem da logo */
+  height: 100px;               /* Altura da imagem da logo */
 }
 
 .logo span {
-  font-size: 36px;
-  font-weight: 900;
-  color: white;
-  font-family: 'Inter', sans-serif;
-
+  font-size: 36px;             /* Tamanho do texto da logo */
+  font-weight: 900;            /* Espessura do texto (negrito máximo) */
+  color: white;                /* Cor branca para o texto */
+  font-family: 'Inter', sans-serif; /* Define a fonte do texto */
 }
-
 
 
 
