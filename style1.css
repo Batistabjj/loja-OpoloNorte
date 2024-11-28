@@ -1,0 +1,83 @@
+body {
+    font-family: 'Inter', sans-serif;
+    /* Fonte importada do Google Fonts */
+    margin: 0;
+    /* Remove margens padrão */
+    padding: 0;
+    /* Remove preenchimentos padrão */
+    background-color: #f9f9f9;
+    /* Define uma cor de fundo suave */
+    color: #333;
+    /* Define a cor padrão do texto */
+    display: flex;
+    /* Flexbox para alinhamento */
+    flex-direction: column;
+    /* Elementos empilhados verticalmente */
+    align-items: center;
+    /* Centraliza o conteúdo horizontalmente */
+    min-height: 100vh;
+    /* Garante que o body ocupe a altura total da tela */
+    box-sizing: border-box;
+
+}
+
+
+
+
+
+
+
+
+
+nav {
+    width: 100%;                      /* Largura total */
+    max-width: 100%;                /* Limite máximo */
+    background-color: #fff;           /* Cor de fundo */
+    padding: 30px 20px;               /* Espaçamento interno */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 5px;               /* Bordas arredondadas */
+    display: flex;                    /* Alinha os itens horizontalmente */
+    justify-content: flex-end;   /* Espaça itens nos extremos */
+    align-items: center;  
+    gap: 10px;            /* Alinha verticalmente ao centro */
+   
+  }
+  
+  /* Estilo para a lista */
+  nav ul {
+    list-style: none;                 /* Remove marcadores */
+    display: flex;                    /* Alinha itens horizontalmente */
+    gap: 30px;                        /* Espaçamento entre os itens */
+    margin-right: 200px;
+  
+  }
+  
+  /* Links */
+  nav ul li a {
+    text-decoration: none;            /* Remove sublinhado */
+    color: green;                      /* Cor do texto */
+                     
+    padding: 5px 10px;                /* Espaçamento interno */
+    border-radius: 3px;               /* Bordas arredondadas */
+    transition: all 0.3s;             /* Suaviza o efeito hover */
+    font-size: 18px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #ddd;           /* Fundo ao passar o mouse */
+    color: #000;                      /* Texto ao passar o mouse */
+  }
+  
+  /* Estilo para o ícone do carrinho */
+  .cart-icon {
+    width: 30px;                      /* Largura da imagem */
+    height: 30px;                     /* Altura da imagem */
+    cursor: pointer;                  /* Troca o cursor ao passar o mouse */
+    transition: transform 0.3s;       /* Efeito ao passar o mouse */
+    margin-right: 150px;
+ 
+  }
+  
+  .cart-icon:hover {
+    transform: scale(1.1);            /* Aumenta levemente ao passar o mouse */
+  }
