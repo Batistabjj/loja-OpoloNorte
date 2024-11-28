@@ -1,126 +1,140 @@
 body {
-    font-family: 'Inter', sans-serif;
-    /* Fonte importada do Google Fonts */
-    margin: 0;
-    /* Remove margens padrão */
-    padding: 0;
-    /* Remove preenchimentos padrão */
-    background-color: #f9f9f9;
-    /* Define uma cor de fundo suave */
-    color: #333;
-    /* Define a cor padrão do texto */
-    display: flex;
-    /* Flexbox para alinhamento */
-    flex-direction: column;
-    /* Elementos empilhados verticalmente */
-    align-items: center;
-    /* Centraliza o conteúdo horizontalmente */
-    min-height: 100vh;
-    /* Garante que o body ocupe a altura total da tela */
-    box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  /* Fonte importada do Google Fonts */
+  margin: 0;
+  /* Remove margens padrão */
+  padding: 0;
+  /* Remove preenchimentos padrão */
+  background-color: #f9f9f9;
+  /* Define uma cor de fundo suave */
+  color: #333;
+  /* Define a cor padrão do texto */
+  display: flex;
+  /* Flexbox para alinhamento */
+  flex-direction: column;
+  /* Elementos empilhados verticalmente */
+  align-items: center;
+  /* Centraliza o conteúdo horizontalmente */
+  min-height: 100vh;
+  /* Garante que o body ocupe a altura total da tela */
+  box-sizing: border-box;
 
 }
 
 .image1 {
-    position: fixed;           /* Fixa a imagem no fundo, independentemente do scroll */
-    top: 0;                    /* Alinha no topo da tela */
-    left: 0;                   /* Alinha na esquerda da tela */
-    width: 100vw;              /* Ocupa 100% da largura da tela */
-    height: 100vh;             /* Ocupa 100% da altura da tela */
-    overflow: hidden;          /* Garante que nada ultrapasse os limites */
-    z-index: -1;               /* Coloca a imagem atrás de outros elementos */
-  }
-  
-  /* Estilo da imagem */
-  .image1 img {
-    width: 100%;               /* A largura ocupa 100% do contêiner */
-    height: 100%;              /* A altura ocupa 100% do contêiner */
-    object-fit: cover;         /* Cobre toda a tela sem distorcer a imagem */
-    object-position: center;   /* Centraliza a imagem no contêiner */
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+/* Estilo da imagem */
+.image1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
 
 
 
 
 nav {
-    width: 100%;                      /* Largura total */
-    max-width: 100%;                /* Limite máximo */
-    background-color: rgba(0, 0, 0, 0.7);          /* Cor de fundo */
-   
-    padding: 30px 20px;               /* Espaçamento interno */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
-    border-radius: 5px;               /* Bordas arredondadas */
-    display: flex;                    /* Alinha os itens horizontalmente */
-    justify-content: flex-end;   /* Espaça itens nos extremos */
-    align-items: center;  
-    border: 1px solid green;
-    
-    
-   
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
 
-    
-   
-  }
-  
-  /* Estilo para a lista */
-  nav ul {
-    list-style: none;                 /* Remove marcadores */
-    display: flex;                    /* Alinha itens horizontalmente */
-    gap: 30px;                        /* Espaçamento entre os itens */
-    align-items: center;
-    margin-right: 100px;
-   
-    border: 1px solid purple;
-  
-  }
-  
-  /* Links */
-  nav ul li a {
-    text-decoration: none;            /* Remove sublinhado */
-    color: whitesmoke;                      /* Cor do texto */
-                   
-    padding: 5px 10px;               /* Espaçamento interno */
-   
-    transition: all 0.3s;             /* Suaviza o efeito hover */
-    font-size: 18px;
-    border: 1px solid blue;
-    
-  }
-  
-  nav ul li a:hover {
-    background-color: #ddd;           /* Fundo ao passar o mouse */
-    color: #000;                      /* Texto ao passar o mouse */
-  }
-  
-  /* Estilo para o ícone do carrinho */
-  .cart-icon {
-    width: 50px;                      /* Largura da imagem */
-    height: 50px;                     /* Altura da imagem */
-    cursor: pointer;                  /* Troca o cursor ao passar o mouse */
-    transition: transform 0.3s;       /* Efeito ao passar o mouse */
-    margin-left: 40px;
-    border: 1px solid yellowgreen;
-   
-   
-    
-    
-   
-   
- 
-  }
-  
-  .cart-icon:hover {
-    transform: scale(1.1);           /* Aumenta levemente ao passar o mouse */
-    
-  }
-  
-  .logo {
-    font-size: 36px;                  /* Tamanho do texto do logo */
-    font-weight: 900;                /* Texto em negrito */
-    color: white;                     /* Cor branca */
-    justify-content: flex-end;
-    margin-right: 150px;
+  padding: 30px 20px;
+  border-radius: 5px;
+  justify-content: flex-end;
+  align-items: center;
+  border: 1px solid green;
 
-    border: 1px solid orange;
+
+
+
+
 
 }
+
+/* Estilo para a lista */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  align-items: center;
+  margin-right: 100px;
+
+  border: 1px solid purple;
+
+}
+
+
+
+/* Links */
+nav ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+  display: flex;
+  padding: 5px 10px;
+  transition: all 0.3s;
+  font-size: 18px;
+  border: 1px solid blue;
+
+}
+
+
+
+nav ul li a:hover {
+  background-color: #ddd;
+  color: #000;
+}
+
+
+
+
+/* Estilo para o ícone do carrinho */
+.cart-icon {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  margin-left: 40px;
+  border: 1px solid yellowgreen;
+
+}
+
+
+.cart-icon:hover {
+  transform: scale(1.1);
+
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 200px;
+  border: 1px solid orangered;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.logo span {
+  font-size: 36px;
+  font-weight: 900;
+  color: white;
+  font-family: 'Inter', sans-serif;
+
+}
+
+
+
+
