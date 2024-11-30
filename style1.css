@@ -128,17 +128,42 @@ nav ul li a:hover {
 
 .centralizado {
  position: absolute; /* Posiciona a frase no fundo */
+ top: 40%; /* Centraliza verticalmente */
+ left: 50%; /* Centraliza horizontalmente */
+ transform: translate(-50%, -50%); /* Ajusta o centro exato */
+ text-align: center; /* Alinha o texto ao centro */
+ color: white; /* Cor do texto */
+ font-size: 76px;
+ font-weight: 500;
  
-  top: 40%; /* Centraliza verticalmente */
-  left: 50%; /* Centraliza horizontalmente */
-  transform: translate(-50%, -50%); /* Ajusta o centro exato */
-  text-align: center; /* Alinha o texto ao centro */
-  color: white; /* Cor do texto */
-  font-size: 76px;
-  font-weight: 500;
  
   border: 1px solid purple; 
 }
+
+.frase1 {
+  font-size: 96px; /* Ajuste o tamanho da fonte conforme necessário */
+  font-weight: 400; /* Estilo de peso da fonte */
+ /* line-height: 1.2; /* Espaçamento entre as linhas */
+  color: white; /* Cor do texto */
+  margin-top: 100px;
+  
+}
+.frase1 p {
+  margin: 0; /* Remove margens padrão entre os parágrafos */
+}
+
+.frase1 p:last-child {
+  font-size: 40px; /* Diminui o tamanho da fonte */
+  font-weight: 400; /* Deixa o texto mais fino */
+  color: #f0f0f0; /* Cor mais clara ou ajuste conforme necessário */
+  margin-top: 10px; /* Adiciona um pequeno espaçamento superior */
+}
+
+
+
+
+
+
 
 
 
@@ -207,6 +232,83 @@ nav ul li a:hover {
 
 /* Estilo das imagens */
 .imgbox3 img {
+  width: 100%;                /* Ajusta a largura ao tamanho do contêiner */
+  height: 100%;               /* Ajusta a altura ao tamanho do contêiner */
+  object-fit: cover;          /* Faz a imagem preencher o espaço sem distorção */
+}
+
+
+.box04 {
+  display: flex; /* Ativa o flexbox */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: flex-start; /* Move o conteúdo para o topo verticalmente */
+  width: 100%;
+  height: 100vh; /* Ocupa toda a altura da tela */
+  text-align: center; /* Centraliza o texto horizontalmente */
+  background-color: black; /* Cor de fundo */
+  padding-top: 100px; /* Ajuste o valor para controlar a distância do topo */
+  margin-top: 0; /* Remove margens desnecessárias */
+ 
+}
+
+.imgbox04 {
+  flex: 1;                    /* Faz cada caixa ocupar o mesmo espaço */
+  overflow: hidden;           /* Garante que o conteúdo não ultrapasse o contêiner */
+}
+
+
+.imgbox04 img {
+  width: 100%;                /* Ajusta a largura ao tamanho do contêiner */
+  height: 100%;               /* Ajusta a altura ao tamanho do contêiner */
+  object-fit: cover;          /* Faz a imagem preencher o espaço sem distorção */
+}
+
+
+
+
+
+
+
+
+
+
+
+.fraseb4 {
+  font-size: 60px; /* Ajuste o tamanho da fonte conforme necessário */
+  font-weight: 400; /* Estilo de peso da fonte */
+  line-height: 1.2; /* Espaçamento entre as linhas */
+  color: white; /* Cor do texto */
+  margin-top: 100px;
+  
+}
+.fraseb4 p {
+  margin: 0; /* Remove margens padrão entre os parágrafos */
+}
+
+.fraseb4 p:last-child {
+  font-size: 40px; /* Diminui o tamanho da fonte */
+  font-weight: 300; /* Deixa o texto mais fino */
+  color: #f0f0f0; /* Cor mais clara ou ajuste conforme necessário */
+  margin-top: 10px; /* Adiciona um pequeno espaçamento superior */
+}
+
+.box4 {
+
+  flex: 1;                    /* Faz cada caixa ocupar o mesmo espaço */
+  overflow: hidden;         
+
+}
+
+
+.imgbox4 {
+
+  flex: 1;                    /* Faz cada caixa ocupar o mesmo espaço */
+  overflow: hidden;           /* Garante que o conteúdo não ultrapasse o contêiner */
+
+}
+
+.imgbox4 {
+
   width: 100%;                /* Ajusta a largura ao tamanho do contêiner */
   height: 100%;               /* Ajusta a altura ao tamanho do contêiner */
   object-fit: cover;          /* Faz a imagem preencher o espaço sem distorção */
