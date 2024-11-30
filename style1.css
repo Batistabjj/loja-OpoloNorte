@@ -194,7 +194,7 @@ nav ul li a:hover {
 .box3 {
   display: flex;              /* Organiza os elementos filhos lado a lado */
   width: 100%;                /* Ocupa toda a largura da tela */
-  height: 50vh;              /* Ocupa toda a altura da tela */
+  height: 60vh;              /* Ocupa toda a altura da tela */
   margin: 0;                  /* Remove margens externas */
   padding: 0;                 /* Remove espaçamentos internos */
 }
