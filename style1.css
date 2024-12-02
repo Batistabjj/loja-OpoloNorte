@@ -238,78 +238,97 @@ nav ul li a:hover {
 }
 
 
-.box04 {
-  display: flex; /* Ativa o flexbox */
+.box4 {
+  display: flex; /* Alinha o conteúdo da frase */
   justify-content: center; /* Centraliza horizontalmente */
-  align-items: flex-start; /* Move o conteúdo para o topo verticalmente */
-  width: 100%;
-  height: 100vh; /* Ocupa toda a altura da tela */
-  text-align: center; /* Centraliza o texto horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  flex-direction: column; /* Empilha as frases verticalmente */
+  width: 100%; /* Ocupa a largura total */
+  text-align: center; /* Centraliza o texto */
   background-color: black; /* Cor de fundo */
-  padding-top: 100px; /* Ajuste o valor para controlar a distância do topo */
-  margin-top: 0; /* Remove margens desnecessárias */
- 
-}
-
-.imgbox04 {
-  flex: 1;                    /* Faz cada caixa ocupar o mesmo espaço */
-  overflow: hidden;           /* Garante que o conteúdo não ultrapasse o contêiner */
-}
-
-
-.imgbox04 img {
-  width: 100%;                /* Ajusta a largura ao tamanho do contêiner */
-  height: 100%;               /* Ajusta a altura ao tamanho do contêiner */
-  object-fit: cover;          /* Faz a imagem preencher o espaço sem distorção */
-}
-
-
-
-
-
-
-
-
-
-
-
-.fraseb4 {
-  font-size: 60px; /* Ajuste o tamanho da fonte conforme necessário */
-  font-weight: 400; /* Estilo de peso da fonte */
-  line-height: 1.2; /* Espaçamento entre as linhas */
-  color: white; /* Cor do texto */
+  padding: 20px 0; /* Espaçamento interno para evitar que fique colado */
   margin-top: 100px;
+  border: solid 1px green;
   
 }
+
 .fraseb4 p {
-  margin: 0; /* Remove margens padrão entre os parágrafos */
+  font-size: 68px; /* Ajuste o tamanho da fonte */
+  font-weight: 400;
+  color: rgb(231, 238, 241); /* Garante que o texto seja visível */
+  margin: 5px 0; /* Espaçamento entre as linhas */
 }
 
-.fraseb4 p:last-child {
-  font-size: 40px; /* Diminui o tamanho da fonte */
-  font-weight: 300; /* Deixa o texto mais fino */
-  color: #f0f0f0; /* Cor mais clara ou ajuste conforme necessário */
-  margin-top: 10px; /* Adiciona um pequeno espaçamento superior */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box04 {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espaçamento entre os itens */
+  padding: 20px;
 }
-
-.box4 {
-
-  flex: 1;                    /* Faz cada caixa ocupar o mesmo espaço */
-  overflow: hidden;         
-
-}
-
 
 .imgbox4 {
-
-  flex: 1;                    /* Faz cada caixa ocupar o mesmo espaço */
-  overflow: hidden;           /* Garante que o conteúdo não ultrapasse o contêiner */
-
+  position: relative; /* Para posicionar o texto do hover */
+  text-align: center;
+  overflow: hidden; /* Impede que o conteúdo ultrapasse o contêiner */
 }
 
-.imgbox4 {
+.imgbox4 img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease; /* Transição suave ao hover */
+}
 
-  width: 100%;                /* Ajusta a largura ao tamanho do contêiner */
-  height: 100%;               /* Ajusta a altura ao tamanho do contêiner */
-  object-fit: cover;          /* Faz a imagem preencher o espaço sem distorção */
+.imgbox4:hover img {
+  transform: scale(1.1); /* Amplia a imagem no hover */
+}
+
+.info {
+  margin-top: 10px; /* Espaçamento acima do texto */
+}
+
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.price {
+  font-size: 14px;
+  color: #888;
+  margin: 5px 0 0 0; /* Pequeno espaçamento superior */
+}
+
+.hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+  padding: 10px 20px;
+  border-radius: 5px;
+  opacity: 0; /* Invisível inicialmente */
+  transition: opacity 0.5s ease; /* Transição suave ao hover */
+  pointer-events: none; /* Impede interação direta com o texto */
+}
+
+.imgbox4:hover .hover-text {
+  opacity: 1; /* Torna visível no hover */
 }
