@@ -326,6 +326,7 @@ nav ul li a:hover {
   border-radius: 5px;
   opacity: 0; /* Invisível inicialmente */
   transition: opacity 0.5s ease; /* Transição suave ao hover */
+  cursor: pointer;
   pointer-events: none; /* Impede interação direta com o texto */
 }
 
