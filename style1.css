@@ -10,9 +10,8 @@ body {
   min-height: 100vh; /* Altura mínima */
   box-sizing: border-box; /* Box model */
   width: 100%; /* Garante que o body tenha 100% da largura */
+  overflow-x: hidden; /* Remove a rolagem lateral */
 }
-
-
 
 nav {
   display: flex; /* Flexbox */
@@ -25,10 +24,6 @@ nav {
   position: fixed; /* Fixa o nav no topo */
   gap: 150px;
   top: 0; /* Fixa no topo */
- 
- 
- 
-/* border: 2px solid blue;*/
 }
 
 nav ul {
@@ -36,8 +31,6 @@ nav ul {
   list-style: none; /* Remove marcadores */
   gap: 50px; /* Espaçamento entre os links */
   margin: 0; /* Remove margens */
-  
- /* border: 1px solid red;*/
 }
 
 nav ul li a {
@@ -46,8 +39,6 @@ nav ul li a {
   padding: 10px; /* Espaçamento interno */
   font-size: 18px; /* Tamanho da fonte */
   transition: background-color 0.3s; /* Transição suave */
-  
- /* border: 1px solid green;*/
 }
 
 nav ul li a:hover {
@@ -55,51 +46,34 @@ nav ul li a:hover {
   color: black; /* Cor do texto */
 }
 
-
-
 .cart-icon {
   width: 40px; /* Tamanho do ícone */
   height: 40px; /* Tamanho do ícone */
   cursor: pointer; /* Cursor de ponteiro */
   transition: transform 0.3s; /* Animação de transformação */
-
-
- /* border: 1px solid plum; */
 }
-  
- 
 
 .cart-icon:hover {
   transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
 }
 
-
-
 .logo {
   display: flex; /* Flexbox para a logo */
   align-items: center; /* Alinha verticalmente */
   gap: 10px; /* Espaçamento entre a imagem e o texto */
-  
-  
-  /*border: 1px solid green;*/
 }
 
 .logo img {
   width: 50px; /* Largura da logo */
   height: 50px; /* Altura da logo */
-  
-  /*border: 1px solid bisque;*/
 }
 
 .logo span {
- 
   font-size: 37px;
-  font-weight: 400;
-  color: grey; /* Cor do texto */
   font-weight: 900; /* Negrito */
+  color: grey; /* Cor do texto */
   margin-right: 5px;
 }
-
 
 .image1 {
   position: relative; /* Fixa a imagem de fundo */
@@ -110,44 +84,32 @@ nav ul li a:hover {
   height: 70vh; /* Altura 100% */
   overflow: hidden; /* Esconde overflow */
   z-index: -1; /* Coloca atrás do conteúdo */
- 
-
-  
-
 }
 
 .image1 img {
   width: 100%; /* Largura da imagem */
   height: 100%; /* Altura da imagem */
   object-fit: cover; /* Cobre todo o contêiner */
-
-/*  border: 1px solid goldenrod; */
 }
 
-
-
 .centralizado {
- position: absolute; /* Posiciona a frase no fundo */
- top: 40%; /* Centraliza verticalmente */
- left: 50%; /* Centraliza horizontalmente */
- transform: translate(-50%, -50%); /* Ajusta o centro exato */
- text-align: center; /* Alinha o texto ao centro */
- color: white; /* Cor do texto */
- font-size: 76px;
- font-weight: 500;
- 
- 
-  border: 1px solid purple; 
+  position: absolute; /* Posiciona a frase no fundo */
+  top: 40%; /* Centraliza verticalmente */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta o centro exato */
+  text-align: center; /* Alinha o texto ao centro */
+  color: white; /* Cor do texto */
+  font-size: 76px;
+  font-weight: 500;
 }
 
 .frase1 {
   font-size: 96px; /* Ajuste o tamanho da fonte conforme necessário */
   font-weight: 400; /* Estilo de peso da fonte */
- /* line-height: 1.2; /* Espaçamento entre as linhas */
   color: white; /* Cor do texto */
   margin-top: 100px;
-  
 }
+
 .frase1 p {
   margin: 0; /* Remove margens padrão entre os parágrafos */
 }
@@ -159,28 +121,15 @@ nav ul li a:hover {
   margin-top: 10px; /* Adiciona um pequeno espaçamento superior */
 }
 
-
-
-
-
-
-
-
-
-
 .container {
-  display: flex;              /* Torna os elementos filhos flexíveis (alinhados horizontalmente) */
+  display: flex; /* Torna os elementos filhos flexíveis (alinhados horizontalmente) */
   justify-content: space-between; /* Espaça os elementos uniformemente */
-  align-items: center;        /* Alinha os itens verticalmente no centro */
-  width: 100%;                /* Ocupa toda a largura da tela */
- /* padding: 20px;              /* Espaçamento interno */
-  gap: 20px;                  /* Espaçamento entre os contêineres */
-  box-sizing: border-box;     /* Inclui padding e bordas no cálculo do tamanho */
-
-  border: 1px solid antiquewhite;
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  width: 100%; /* Ocupa toda a largura da tela */
+  gap: 20px; /* Espaçamento entre os contêineres */
+  box-sizing: border-box; /* Inclui padding e bordas no cálculo do tamanho */
 }
 
-/* Estilo para o contêiner lançamentos */
 .lançamantos {
   flex: 1; /* Faz o contêiner ocupar o mesmo espaço que os outros */
   background-color: rgba(0, 0, 0, 0.7); /* Fundo preto com transparência */
@@ -191,7 +140,7 @@ nav ul li a:hover {
   font-size: 60px; /* Tamanho do texto */
   font-weight: 400; /* Peso da fonte */
   border: 5px solid olivedrab;
-  line-height: 1.5; /* Espacçamento quase inexistente entre linhas */
+  line-height: 1.5; /* Espaçamento quase inexistente entre linhas */
 }
 
 .lançamantos p {
@@ -204,50 +153,68 @@ nav ul li a:hover {
   font-weight: 300; /* Deixa o texto mais fino */
 }
 
+.lançamantos .comprar-link {
+  color: white; /* Cor do texto */
+  text-decoration: none; /* Remove o sublinhado */
+  font-weight: 500; /* Peso da fonte */
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px; /* Espaço para o efeito */
+  transition: all 0.3s ease; /* Suaviza a animação */
+  cursor: pointer; /* Muda o cursor para a mãozinha quando passar o mouse */
+  animation: piscar 1s infinite; /* Animação de piscar */
+}
 
+@keyframes piscar {
+  0% {
+    opacity: 1; /* Totalmente visível */
+  }
+  50% {
+    opacity: 0; /* Invisível no meio da animação */
+  }
+  100% {
+    opacity: 1; /* Volta a ficar visível */
+  }
+}
 
-/* Estilo para o contêiner mochila */
 .mochila1 {
   width: 100%;
-  height: 100%;               /* Garante que o contêiner ocupe a altura definida */
-  flex: 1;                    /* Faz o contêiner ocupar o mesmo espaço que o outro */
-  text-align: center;         /* Centraliza o conteúdo */
-  border: 1px solid purple;
-  overflow: hidden;           /* Impede que qualquer conteúdo extra vaze */
+  height: 100%; /* Garante que o contêiner ocupe a altura definida */
+  flex: 1; /* Faz o contêiner ocupar o mesmo espaço que o outro */
+  text-align: center; /* Centraliza o conteúdo */
+  overflow: hidden; /* Impede que qualquer conteúdo extra vaze */
 }
 
 .mochila1 img {
-  display: block;             /* Remove o comportamento inline padrão das imagens */
-  width: 100%;                /* Faz a imagem ocupar toda a largura do contêiner */
-  height: 100%;               /* Faz a imagem ocupar toda a altura do contêiner */
-  object-fit: cover;          /* Ajusta a imagem para cobrir o contêiner */
-  margin: 0;                  /* Garante que não haja margem extra */
-  padding: 0;                 /* Garante que não haja preenchimento extra */
+  display: block; /* Remove o comportamento inline padrão das imagens */
+  width: 100%; /* Faz a imagem ocupar toda a largura do contêiner */
+  height: 100%; /* Faz a imagem ocupar toda a altura do contêiner */
+  object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
+  margin: 0; /* Garante que não haja margem extra */
+  padding: 0; /* Garante que não haja preenchimento extra */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Adiciona sombra suave */
 }
 
-
-/* Contêiner principal que organiza as imagens lado a lado */
 .box3 {
-  display: flex;              /* Organiza os elementos filhos lado a lado */
-  width: 100%;                /* Ocupa toda a largura da tela */
-  height: 60vh;              /* Ocupa toda a altura da tela */
-  margin: 0;                  /* Remove margens externas */
-  padding: 0;                 /* Remove espaçamentos internos */
+  display: flex; /* Organiza os elementos filhos lado a lado */
+  width: 100%; /* Ocupa toda a largura da tela */
+  height: 60vh; /* Ocupa toda a altura da tela */
+  margin: 0; /* Remove margens externas */
+  padding: 0; /* Remove espaçamentos internos */
 }
 
-/* Estilo das caixas individuais que contêm as imagens */
 .imgbox3 {
-  flex: 1;                    /* Faz cada caixa ocupar o mesmo espaço */
-  overflow: hidden;           /* Garante que o conteúdo não ultrapasse o contêiner */
+  flex: 1; /* Faz cada caixa ocupar o mesmo espaço */
+  overflow: hidden; /* Garante que o conteúdo não ultrapasse o contêiner */
 }
 
-/* Estilo das imagens */
 .imgbox3 img {
-  width: 100%;                /* Ajusta a largura ao tamanho do contêiner */
-  height: 100%;               /* Ajusta a altura ao tamanho do contêiner */
-  object-fit: cover;          /* Faz a imagem preencher o espaço sem distorção */
+  width: 100%; /* Ajusta a largura ao tamanho do contêiner */
+  height: 100%; /* Ajusta a altura ao tamanho do contêiner */
+  object-fit: cover; /* Faz com que a imagem cubra o contêiner sem distorcer */
+  transition: transform 0.5s ease; /* Adiciona uma transição suave */
 }
+
 
 
 .box4 {
@@ -355,4 +322,73 @@ nav ul li a:hover {
 
 .imgbox4:hover .hover-text {
   opacity: 1; /* Mostra o texto no hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.box5 {
+  display: flex;
+  height: 100vh; /* Altura da tela */
+  width: 100vw; /* Largura da tela */
+  position: relative; /* Para permitir a sobreposição do texto */
+}
+
+/* Imagem ocupa toda a tela */
+.image-box {
+  flex: 1; /* Faz a imagem ocupar metade da largura */
+  height: 70%; /* Altura total da tela */
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Faz a imagem ocupar toda a tela sem distorcer */
+}
+
+/* Caixa de texto no lado esquerdo */
+.titulobox5 {
+  position: absolute; /* Permite que o texto sobreponha a imagem */
+  top: 0;
+  left: 0;
+  width: 50%; /* Ocupa metade da tela */
+  height: 100%; /* Altura total da tela */
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo preto com transparência */
+  color: white; /* Cor do texto */
+ /* padding: 20px; /* Espaçamento interno */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Alinha o texto à esquerda */
+}
+
+/* Estilo do título e do texto */
+.titulobox5 p {
+  margin: 0; /* Remove margens padrão */
+  font-size: 18px; /* Tamanho do texto */
+  line-height: 1.6; /* Espaçamento entre as linhas */
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+.titulobox5 p:first-child {
+  font-size: 30px; /* Aumenta o tamanho do título */
+  font-weight: bold; /* Deixa o título em negrito */
+}
+
+.box5 .imgbox5 img {
+ /* display: block; /* Remove o comportamento inline padrão das imagens */
+  width: 100px; /* Faz a imagem ocupar toda a largura do contêiner */
+  height: auto; /* Ajusta a altura proporcionalmente */
+  object-fit: contain; /* Garante que a imagem se ajuste dentro do contêiner */
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+  padding: 0; /* Garante que não haja preenchimento extra */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Adiciona sombra suave */
 }
