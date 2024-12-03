@@ -360,22 +360,21 @@ nav ul li a:hover {
   top: 0;
   left: 0;
   width: 50%; /* Ocupa metade da tela */
-  height: 100%; /* Altura total da tela */
+  height: 70%; /* Altura total da tela */
   background-color: rgba(0, 0, 0, 0.5); /* Fundo preto com transparência */
   color: white; /* Cor do texto */
- /* padding: 20px; /* Espaçamento interno */
   display: flex;
   flex-direction: column;
   justify-content: center; /* Centraliza verticalmente */
-  align-items: center; /* Alinha o texto à esquerda */
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+  text-align: center; /* Centraliza o texto */
 }
 
-/* Estilo do título e do texto */
 .titulobox5 p {
   margin: 0; /* Remove margens padrão */
   font-size: 18px; /* Tamanho do texto */
   line-height: 1.6; /* Espaçamento entre as linhas */
-  text-align: left; /* Alinha o texto à esquerda */
+  text-align: center; /* Centraliza o texto */
 }
 
 .titulobox5 p:first-child {
@@ -383,12 +382,3 @@ nav ul li a:hover {
   font-weight: bold; /* Deixa o título em negrito */
 }
 
-.box5 .imgbox5 img {
- /* display: block; /* Remove o comportamento inline padrão das imagens */
-  width: 100px; /* Faz a imagem ocupar toda a largura do contêiner */
-  height: auto; /* Ajusta a altura proporcionalmente */
-  object-fit: contain; /* Garante que a imagem se ajuste dentro do contêiner */
-  margin: 0 auto; /* Centraliza a imagem horizontalmente */
-  padding: 0; /* Garante que não haja preenchimento extra */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Adiciona sombra suave */
-}
