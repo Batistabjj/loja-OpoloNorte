@@ -182,17 +182,29 @@ nav ul li a:hover {
 
 /* Estilo para o contêiner lançamentos */
 .lançamantos {
-  flex: 1;                    /* Faz o contêiner ocupar o mesmo espaço que o outro */
+  flex: 1; /* Faz o contêiner ocupar o mesmo espaço que os outros */
   background-color: rgba(0, 0, 0, 0.7); /* Fundo preto com transparência */
-  color: white;               /* Texto branco */
-  padding: 20px;              /* Espaçamento interno */
-  text-align: center;         /* Centraliza o texto */
+  color: white; /* Texto branco */
+  padding: 10px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o texto */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra suave */
-  font-size: 60px;            /* Tamanho do texto */
-  font-weight: 400;
-
+  font-size: 60px; /* Tamanho do texto */
+  font-weight: 400; /* Peso da fonte */
   border: 5px solid olivedrab;
+  line-height: 1.5; /* Espacçamento quase inexistente entre linhas */
 }
+
+.lançamantos p {
+  margin: 0; /* Remove todas as margens automáticas */
+  padding: 0; /* Remove qualquer espaçamento interno */
+}
+
+.lançamantos p:last-child {
+  font-size: 40px; /* Reduz o tamanho do texto "comprar" */
+  font-weight: 300; /* Deixa o texto mais fino */
+}
+
+
 
 /* Estilo para o contêiner mochila */
 .mochila1 {
@@ -259,6 +271,15 @@ nav ul li a:hover {
   margin: 5px 0; /* Espaçamento entre as linhas */
 }
 
+.fraseb4 p:last-child {
+  font-size: 36px; /* Diminui o tamanho da fonte */
+  font-weight: 300; /* Deixa o texto mais fino */
+  color: #ccc; /* Ajusta a cor (opcional) */
+  line-height: 1.2; /* Ajusta o espaçamento entre linhas */
+  margin-top: 5px; /* Adiciona espaçamento acima (opcional) */
+}
+
+
 
 
 
@@ -281,15 +302,18 @@ nav ul li a:hover {
 }
 
 .imgbox4 {
-  position: relative; /* Para posicionar o texto do hover */
+  position: relative;
   text-align: center;
-  overflow: hidden; /* Impede que o conteúdo ultrapasse o contêiner */
+  overflow: hidden;
+  display: block; /* Garante que o link ocupe todo o contêiner */
+  text-decoration: none; /* Remove o sublinhado padrão do link */
+  color: inherit; /* Mantém a cor do texto definida no CSS */
 }
 
 .imgbox4 img {
   width: 100%;
   height: auto;
-  transition: transform 0.5s ease; /* Transição suave ao hover */
+  transition: transform 0.5s ease; /* Efeito suave no hover */
 }
 
 .imgbox4:hover img {
@@ -297,7 +321,7 @@ nav ul li a:hover {
 }
 
 .info {
-  margin-top: 10px; /* Espaçamento acima do texto */
+  margin-top: 10px;
 }
 
 .title {
@@ -310,7 +334,7 @@ nav ul li a:hover {
 .price {
   font-size: 14px;
   color: #888;
-  margin: 5px 0 0 0; /* Pequeno espaçamento superior */
+  margin: 5px 0 0;
 }
 
 .hover-text {
@@ -321,15 +345,14 @@ nav ul li a:hover {
   font-size: 18px;
   font-weight: bold;
   color: white;
-  background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 10px 20px;
   border-radius: 5px;
-  opacity: 0; /* Invisível inicialmente */
-  transition: opacity 0.5s ease; /* Transição suave ao hover */
-  cursor: pointer;
-  pointer-events: none; /* Impede interação direta com o texto */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
 }
 
 .imgbox4:hover .hover-text {
-  opacity: 1; /* Torna visível no hover */
+  opacity: 1; /* Mostra o texto no hover */
 }
