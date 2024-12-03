@@ -144,7 +144,7 @@ nav ul li a:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra suave */
   font-size: 60px; /* Tamanho do texto */
   font-weight: 400; /* Peso da fonte */
-  border: 5px solid olivedrab;
+ 
   line-height: 1.5; /* Espaçamento quase inexistente entre linhas */
 }
 
@@ -232,7 +232,7 @@ nav ul li a:hover {
   background-color: black; /* Cor de fundo */
   padding: 20px 0; /* Espaçamento interno para evitar que fique colado */
   margin-top: 100px;
-  border: solid 1px green;
+  
   
 }
 
@@ -390,32 +390,96 @@ nav ul li a:hover {
 }
 
 
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    gap: 20px; /* Reduz espaçamento */
-  }
-
-  .frase1 {
-    font-size: 50px; /* Reduz o tamanho do texto */
-  }
-
-  .lançamantos {
-    font-size: 40px; /* Ajusta tamanho */
-  }
+.box6 {
+  display: flex; /* Exibe os dois filhos lado a lado */
+  width: 100vw; /* Ocupa toda a largura da tela */
+  height: 500px; /* Aumenta um pouco a altura do contêiner */
+  gap: 0; /* Remove o espaço entre os dois contêineres */
+  background-color: black; /* Fundo preto para toda a seção */
 }
 
-@media (max-width: 480px) {
-  .box5 .titulobox5 {
-    width: 100%; /* Ocupa toda a largura */
-    font-size: 16px; /* Reduz tamanho da fonte */
-  }
+.titulobox6, .loginmsg {
+  flex: 1; /* Ambos os contêineres ocupam 50% da largura */
+  display: flex; /* Adiciona flexbox para centralizar o conteúdo */
+  flex-direction: column; /* Mantém o conteúdo empilhado verticalmente */
+  justify-content: center; /* Centraliza o conteúdo verticalmente */
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+  padding: 20px;
+  box-sizing: border-box; /* Inclui padding no tamanho total */
+  background-color: black; /* Fundo preto */
+  color: white; /* Texto branco */
+}
 
-  .frase1 {
-    font-size: 30px; /* Ainda menor para telas pequenas */
-  }
+form {
+  width: 80%; /* Limita a largura do formulário */
+}
 
-  nav ul li a {
-    font-size: 14px; /* Menor para dispositivos móveis */
-  }
+form input, form textarea {
+  width: 100%; /* Ocupa toda a largura do contêiner pai */
+  padding: 5px; /* Reduz o espaçamento interno */
+  margin-bottom: 1px; /* Diminui o espaçamento entre os campos */
+  border: 1px solid #555; /* Linha sutil ao redor dos campos */
+  border-radius: 5px;
+  background-color: #222; /* Fundo dos campos preto mais claro */
+  color: white; /* Texto branco */
+  font-size: 14px; /* Tamanho do texto ajustado */
+}
+
+form textarea {
+  resize: none; /* Impede redimensionamento manual do textarea */
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: slategrey;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px; /* Texto do botão maior */
+}
+
+form button:hover {
+  background-color: green;
+}
+
+.titulobox6 p:first-child {
+  font-size: 60px; /* Título maior */
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.titulobox6 p:last-child {
+  text-align: center; /* Centraliza o parágrafo */
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.4; /* Ajusta o espaçamento entre linhas */
+  color: #ccc; /* Cor cinza claro para contraste */
+}
+
+
+
+
+
+
+
+
+.contact-info {
+ 
+  font-size: 14px; /* Texto menor */
+  color: #ccc; /* Cor cinza claro */
+  text-align: left; /* Alinha o texto à esquerda */
+  line-height: 1.5; /* Espaçamento confortável entre linhas */
+  margin-right: 400px;
+}
+
+.contact-info a {
+  color: #1e90ff; /* Azul claro para links */
+  text-decoration: none; /* Remove sublinhado */
+  transition: color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+.contact-info a:hover {
+  color: #ffffff; /* Fica branco ao passar o mouse */
 }
