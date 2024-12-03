@@ -1,107 +1,112 @@
 body {
-  font-family: 'Inter', sans-serif; /* Fonte */
-  margin: 0; /* Remove margens */
-  padding: 0; /* Remove preenchimentos */
-  background-color: black; /* Cor de fundo */
-  color: #333; /* Cor do texto */
-  display: flex; /* Flexbox */
-  flex-direction: column; /* Empilhamento vertical */
-  align-items: center; /* Centraliza o conteúdo */
-  min-height: 100vh; /* Altura mínima */
-  box-sizing: border-box; /* Box model */
-  width: 100%; /* Garante que o body tenha 100% da largura */
-  overflow-x: hidden; /* Remove a rolagem lateral */
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 nav {
-  display: flex; /* Flexbox */
-  width: 100%; /* Largura 100% */
+  display: flex;
+  width: 100%;
   height: 10%;
-  background-color: rgba(0, 0, 0, 0.7); /* Fundo transparente */
-  padding: 20px 30px; /* Espaçamento */
-  justify-content: center; /* Distribui o conteúdo */
-  align-items: center; /* Centraliza o conteúdo verticalmente */
-  position: fixed; /* Fixa o nav no topo */
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px 30px;
+  justify-content: center;
+  align-items: center;
+  position: fixed; /* Alteração aqui para fixar o nav */
+  top: 0; /* Fica no topo da página */
+  z-index: 1000; /* Garante que o nav ficará sobre outros conteúdos */
   gap: 150px;
-  top: 0; /* Fixa no topo */
+  left: 0; /* Garante que o nav ocupe toda a largura */
 }
 
 nav ul {
-  display: flex; /* Flexbox para os links */
-  list-style: none; /* Remove marcadores */
-  gap: 50px; /* Espaçamento entre os links */
-  margin: 0; /* Remove margens */
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  margin: 0;
 }
 
 nav ul li a {
-  text-decoration: none; /* Remove sublinhado */
-  color: white; /* Cor do texto */
-  padding: 10px; /* Espaçamento interno */
-  font-size: 18px; /* Tamanho da fonte */
-  transition: background-color 0.3s; /* Transição suave */
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
-  background-color: #ddd; /* Cor de fundo ao passar o mouse */
-  color: black; /* Cor do texto */
+  background-color: #ddd;
+  color: black;
 }
 
 .cart-icon {
-  width: 40px; /* Tamanho do ícone */
-  height: 40px; /* Tamanho do ícone */
-  cursor: pointer; /* Cursor de ponteiro */
-  transition: transform 0.3s; /* Animação de transformação */
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s;
 }
 
 .cart-icon:hover {
-  transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
+  transform: scale(1.1);
 }
 
 .logo {
-  display: flex; /* Flexbox para a logo */
-  align-items: center; /* Alinha verticalmente */
-  gap: 10px; /* Espaçamento entre a imagem e o texto */
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .logo img {
-  width: 50px; /* Largura da logo */
-  height: 50px; /* Altura da logo */
+  width: 50px;
+  height: 50px;
 }
 
 .logo span {
   font-size: 37px;
-  font-weight: 900; /* Negrito */
-  color: grey; /* Cor do texto */
+  font-weight: 900;
+  color: grey;
   margin-right: 5px;
 }
 
+/* Ajustes para imagem de fundo */
 .image1 {
-  position: relative; /* Fixa a imagem de fundo */
-  justify-content: center;
-  top: 0; /* Alinha ao topo */
-  left: 0; /* Alinha à esquerda */
-  width: 100%; /* Largura 100% */
-  height: 70vh; /* Altura 100% */
-  overflow: hidden; /* Esconde overflow */
-  z-index: -1; /* Coloca atrás do conteúdo */
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  z-index: -1;
 }
 
 .image1 img {
-  width: 100%; /* Largura da imagem */
-  height: 100%; /* Altura da imagem */
-  object-fit: cover; /* Cobre todo o contêiner */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .centralizado {
-  position: absolute; /* Posiciona a frase no fundo */
-  top: 40%; /* Centraliza verticalmente */
-  left: 50%; /* Centraliza horizontalmente */
-  transform: translate(-50%, -50%); /* Ajusta o centro exato */
-  text-align: center; /* Alinha o texto ao centro */
-  color: white; /* Cor do texto */
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
   font-size: 76px;
   font-weight: 500;
 }
+
+/* Outras classes de layout continuam */
+
 
 .frase1 {
   font-size: 96px; /* Ajuste o tamanho da fonte conforme necessário */
@@ -337,21 +342,22 @@ nav ul li a:hover {
 
 .box5 {
   display: flex;
-  height: 100vh; /* Altura da tela */
+  height: 80vh; /* Diminuindo a altura para ajustar a imagem */
   width: 100vw; /* Largura da tela */
   position: relative; /* Para permitir a sobreposição do texto */
+  overflow: hidden; /* Impede que haja rolagem extra */
 }
 
-/* Imagem ocupa toda a tela */
+/* Imagem ocupa todo o espaço disponível no container */
 .image-box {
-  flex: 1; /* Faz a imagem ocupar metade da largura */
-  height: 70%; /* Altura total da tela */
+  flex: 1; /* A imagem ocupa o espaço restante */
+  height: 100%; /* A altura é ajustada de acordo com o container .box5 */
 }
 
 .image-box img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Faz a imagem ocupar toda a tela sem distorcer */
+  object-fit: cover; /* Garante que a imagem cubra todo o container sem distorcer */
 }
 
 /* Caixa de texto no lado esquerdo */
@@ -360,7 +366,7 @@ nav ul li a:hover {
   top: 0;
   left: 0;
   width: 50%; /* Ocupa metade da tela */
-  height: 70%; /* Altura total da tela */
+  height: 100%; /* Altura total do container */
   background-color: rgba(0, 0, 0, 0.5); /* Fundo preto com transparência */
   color: white; /* Cor do texto */
   display: flex;
@@ -368,6 +374,7 @@ nav ul li a:hover {
   justify-content: center; /* Centraliza verticalmente */
   align-items: center; /* Centraliza o conteúdo horizontalmente */
   text-align: center; /* Centraliza o texto */
+  padding: 20px; /* Adiciona um pouco de espaço interno para o texto não ficar colado nas bordas */
 }
 
 .titulobox5 p {
@@ -382,3 +389,33 @@ nav ul li a:hover {
   font-weight: bold; /* Deixa o título em negrito */
 }
 
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 20px; /* Reduz espaçamento */
+  }
+
+  .frase1 {
+    font-size: 50px; /* Reduz o tamanho do texto */
+  }
+
+  .lançamantos {
+    font-size: 40px; /* Ajusta tamanho */
+  }
+}
+
+@media (max-width: 480px) {
+  .box5 .titulobox5 {
+    width: 100%; /* Ocupa toda a largura */
+    font-size: 16px; /* Reduz tamanho da fonte */
+  }
+
+  .frase1 {
+    font-size: 30px; /* Ainda menor para telas pequenas */
+  }
+
+  nav ul li a {
+    font-size: 14px; /* Menor para dispositivos móveis */
+  }
+}
