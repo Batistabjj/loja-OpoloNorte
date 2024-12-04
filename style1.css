@@ -393,32 +393,55 @@ nav ul li a:hover {
 .box6 {
   display: flex; /* Exibe os dois filhos lado a lado */
   width: 100vw; /* Ocupa toda a largura da tela */
-  height: 500px; /* Aumenta um pouco a altura do contêiner */
-  gap: 0; /* Remove o espaço entre os dois contêineres */
+  height: 500px; /* Altura do contêiner */
   background-color: black; /* Fundo preto para toda a seção */
 }
 
 .titulobox6, .loginmsg {
   flex: 1; /* Ambos os contêineres ocupam 50% da largura */
-  display: flex; /* Adiciona flexbox para centralizar o conteúdo */
-  flex-direction: column; /* Mantém o conteúdo empilhado verticalmente */
-  justify-content: center; /* Centraliza o conteúdo verticalmente */
-  align-items: center; /* Centraliza o conteúdo horizontalmente */
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Alinha verticalmente ao centro */
+  align-items: center; /* Alinha horizontalmente ao centro */
+  padding: 20px; /* Espaçamento interno */
   box-sizing: border-box; /* Inclui padding no tamanho total */
   background-color: black; /* Fundo preto */
-  color: white; /* Texto branco */
+  color: whitesmoke; /* Texto branco */
 }
 
-form {
+.titulobox6 p {
+  margin: 0; /* Remove margens padrão */
+}
+
+.titulobox6 p:first-child {
+  font-size: 60px; /* Título maior */
+  font-weight: 400;
+  margin-bottom: 20px; /* Pequeno espaçamento abaixo do título */
+}
+
+.titulobox6 p:last-child {
+  text-align: center; /* Centraliza o parágrafo */
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.4; /* Ajusta o espaçamento entre linhas */
+  color: #f0e1e1; /* Cor cinza claro para contraste */
+}
+
+.loginmsg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginmsg form {
   width: 80%; /* Limita a largura do formulário */
 }
 
 form input, form textarea {
   width: 100%; /* Ocupa toda a largura do contêiner pai */
-  padding: 5px; /* Reduz o espaçamento interno */
-  margin-bottom: 1px; /* Diminui o espaçamento entre os campos */
-  border: 1px solid #555; /* Linha sutil ao redor dos campos */
+  padding: 10px; /* Reduz o espaçamento interno */
+  margin-bottom: 10px; /* Espaçamento entre os campos */
+  border: 1px solid white; /* Linha sutil ao redor dos campos */
   border-radius: 5px;
   background-color: #222; /* Fundo dos campos preto mais claro */
   color: white; /* Texto branco */
@@ -431,8 +454,8 @@ form textarea {
 
 form button {
   padding: 10px 20px;
-  background-color: slategrey;
-  color: white;
+  background-color:  burlywood;
+  color: black;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -444,21 +467,6 @@ form button:hover {
   background-color: green;
 }
 
-.titulobox6 p:first-child {
-  font-size: 60px; /* Título maior */
-  font-weight: 400;
-  margin-bottom: 15px;
-}
-
-.titulobox6 p:last-child {
-  text-align: center; /* Centraliza o parágrafo */
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 1.4; /* Ajusta o espaçamento entre linhas */
-  color: #ccc; /* Cor cinza claro para contraste */
-}
-
-
 
 
 
@@ -468,10 +476,11 @@ form button:hover {
 .contact-info {
  
   font-size: 14px; /* Texto menor */
-  color: #ccc; /* Cor cinza claro */
+  color: whitesmoke; /* Cor cinza claro */
   text-align: left; /* Alinha o texto à esquerda */
   line-height: 1.5; /* Espaçamento confortável entre linhas */
-  margin-right: 400px;
+ /* margin-right: 400px; */
+  margin-top: 0px;
 }
 
 .contact-info a {
