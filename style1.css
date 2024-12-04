@@ -492,3 +492,133 @@ form button:hover {
 .contact-info a:hover {
   color: #ffffff; /* Fica branco ao passar o mouse */
 }
+
+
+
+.box7 {
+  display: flex; /* Flexbox para centralizar conteúdo */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 50vh; /* Altura reduzida */
+  background-color: black; /* Fundo preto */
+  color: white; /* Texto branco */
+}
+
+.titulobox7 {
+  text-align: center; /* Centraliza o texto */
+}
+
+.titulobox7 .title {
+  font-size: 64px; /* Título grande */
+  font-weight: bold; /* Negrito */
+  margin-bottom: 10px; /* Espaçamento abaixo do título */
+  color: #f0f0f0; /* Texto branco claro */
+}
+
+.titulobox7 .subtitle {
+  font-size: 32px; /* Subtítulo menor */
+  font-weight: 300; /* Fonte fina */
+  color: #ddd; /* Cor mais suave */
+  margin-bottom: 20px; /* Espaçamento abaixo do subtítulo */
+}
+
+.email-container {
+  display: flex; /* Flexbox para alinhar o input e o botão lado a lado */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Alinha verticalmente */
+  gap: 10px; /* Espaçamento entre o input e o botão */
+}
+
+.email-container input {
+  width: 400px; /* Largura equivalente ao subtítulo */
+  padding: 10px; /* Espaçamento interno */
+  font-size: 18px; /* Texto do input */
+  border: 1px solid #555; /* Borda sutil */
+  border-radius: 5px; /* Bordas arredondadas */
+  background-color: #222; /* Fundo do input */
+  color: white; /* Texto branco */
+}
+
+.email-container input::placeholder {
+  color: #aaa; /* Cor do placeholder */
+}
+
+.email-container button {
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  font-size: 18px; /* Texto do botão */
+  background-color: grey; /* Fundo do botão */
+  color: white; /* Texto branco */
+  border: none; /* Remove bordas padrão */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de clique */
+  transition: background-color 0.3s ease; /* Transição no hover */
+}
+
+.email-container button:hover {
+  background-color: green; /* Cor mais escura ao passar o mouse */
+}
+
+
+
+.email-container input {
+  width: 400px; /* Largura equivalente ao subtítulo */
+  padding: 10px; /* Espaçamento interno */
+  font-size: 18px; /* Texto do input */
+  border: 1px solid #555; /* Borda inicial sutil */
+  border-radius: 5px; /* Bordas arredondadas */
+  background-color: #222; /* Fundo do input */
+  color: white; /* Texto branco */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+}
+
+.email-container input::placeholder {
+  color: #aaa; /* Cor do placeholder */
+}
+
+/* Efeito ao passar o cursor */
+.email-container input:hover {
+  border-color: white; /* Borda branca */
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* Brilho ao redor */
+}
+
+
+.footer {
+  background-color: #222; /* Fundo escuro */
+  color: #ccc; /* Texto cinza claro */
+  width: 100%; /* Ocupa toda a largura da tela */
+  padding: 30px 0; /* Padding superior e inferior para aumentar a altura */
+  font-family: Arial, sans-serif; /* Fonte legível */
+  font-size: 14px; /* Tamanho do texto */
+  border-top: 3px solid #1e90ff; /* Linha decorativa no topo */
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column; /* Organiza o conteúdo em colunas (3 linhas) */
+  align-items: center; /* Centraliza os itens dentro do contêiner */
+  text-align: center; /* Alinha o texto no centro */
+  max-width: 800px; /* Limita a largura do conteúdo */
+  width: 100%; /* Ocupa toda a largura disponível dentro do limite */
+  padding: 20px 0; /* Padding para espaçar os itens verticalmente */
+}
+
+.footer p {
+  margin: 8px 0; /* Espaçamento entre as linhas de texto */
+}
+
+.footer a {
+  color: #1e90ff; /* Cor azul para links */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s ease; /* Transição suave para o hover */
+}
+
+.footer a:hover {
+  color: #ffffff; /* Cor branca ao passar o mouse */
+}
+
+.footer strong {
+  color: #ffffff; /* Destaca o texto importante com branco */
+}
