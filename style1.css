@@ -504,14 +504,14 @@ form button:hover {
   justify-content: center;
   align-items: center;
   position: fixed;
-  right: 20px;
+  right: 10px;
   top: 50%;
   transform: translateY(-50%);
 }
 
 .imageredes img {
   width: 40px; /* Ajuste o tamanho das imagens */
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   background-color:transparent; /* Garantir que o fundo seja transparente */
 }
 
