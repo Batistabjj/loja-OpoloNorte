@@ -478,13 +478,13 @@ form button:hover {
   font-size: 14px; /* Texto menor */
   color: whitesmoke; /* Cor cinza claro */
   text-align: left; /* Alinha o texto à esquerda */
-  line-height: 1.5; /* Espaçamento confortável entre linhas */
- /* margin-right: 400px; */
-  margin-top: 0px;
+  line-height: 1.2; /* Espaçamento confortável entre linhas */
+ 
+  margin-top: 10%;
 }
 
 .contact-info a {
-  color: #1e90ff; /* Azul claro para links */
+  color:#1e90ff; /* Azul claro para links */
   text-decoration: none; /* Remove sublinhado */
   transition: color 0.3s ease; /* Transição suave ao passar o mouse */
 }
@@ -492,6 +492,29 @@ form button:hover {
 .contact-info a:hover {
   color: #ffffff; /* Fica branco ao passar o mouse */
 }
+
+
+
+
+
+
+.imageredes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.imageredes img {
+  width: 40px; /* Ajuste o tamanho das imagens */
+  margin-bottom: 10px;
+  background-color:transparent; /* Garantir que o fundo seja transparente */
+}
+
 
 
 
@@ -602,6 +625,7 @@ form button:hover {
   text-align: center; /* Alinha o texto no centro */
   max-width: 800px; /* Limita a largura do conteúdo */
   width: 100%; /* Ocupa toda a largura disponível dentro do limite */
+  height: 150px;
   padding: 20px 0; /* Padding para espaçar os itens verticalmente */
 }
 
@@ -622,3 +646,19 @@ form button:hover {
 .footer strong {
   color: #ffffff; /* Destaca o texto importante com branco */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
